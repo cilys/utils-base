@@ -1,7 +1,7 @@
 package com.cily.utils.base.integer;
 
 /**
- * Created by 13218 on 2017/8/14.
+ * Created by 13218 on 2017/8/1.
  */
 public class IntUtils {
 
