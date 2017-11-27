@@ -1,11 +1,9 @@
 package com.cily.utils.base.log;
 
 /**
- * user:cily
- * time:2017/6/13
- * desc:
+ * @author cily
+ * @version 1.0.1   2017-01-08  日志等级
  */
-
 public interface LogType {
     /**无log*/
     int NONE = -1;

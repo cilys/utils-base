@@ -7,9 +7,8 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
 /**
- * user:cily
- * time:2017/8/28
- * desc:时间格式处理工具
+ * @author cily
+ * @version 1.0.1   2017-01-10  时间格式处理工具
  */
 public class TimeUtils {
 	private final static String TAG = "TimeUtils";

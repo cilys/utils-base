@@ -5,15 +5,14 @@ import java.io.IOException;
 import java.io.PrintStream;
 
 /**
- * user:cily
- * time:2017/6/13
- * desc:Stream转字符串工具类
+ * @author cily
+ * @version 1.0.0   2017-01-02  Stream转字符串工具类
  */
 
 public class StreamToStr {
     /**
      * 异常转String
-     * @param e
+     * @param e     异常
      * @return
      */
     public static String throwableToStr(Throwable e){

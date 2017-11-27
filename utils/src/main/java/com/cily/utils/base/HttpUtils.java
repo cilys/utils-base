@@ -12,9 +12,19 @@ import java.net.URLConnection;
 import java.net.URLEncoder;
 import java.util.Map;
 
+/**
+ * @author cily
+ * @version 1.0.1   2017-01-3  http请求工具类
+ */
 public class HttpUtils {
 	public final static String JSON_BODY = "JSON_BODY";
-	
+
+	/**
+	 * get请求
+	 * @param url		链接地址
+	 * @return			响应，非200响应为null
+	 * @throws IOException
+	 */
 	public final static String get(String url) throws IOException{
 		URL u = new URL(url);
 		URLConnection uc = u.openConnection();

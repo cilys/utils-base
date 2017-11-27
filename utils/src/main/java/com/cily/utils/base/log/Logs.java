@@ -1,9 +1,8 @@
 package com.cily.utils.base.log;
 
 /**
- * user:cily
- * time:2017/8/28
- * desc:log工具类
+ * @author cily
+ * @version 1.0.1   2017-01-08  日志工具类
  */
 public class Logs {
 	/**默认全部log*/
@@ -27,7 +26,7 @@ public class Logs {
 
 	/**
 	 * 输出异常
-	 * @param e
+	 * @param e		异常
      */
 	public static void printException(Throwable e){
 		if(getLevel() >= LogType.EXCEPTION && e != null){
@@ -39,7 +38,7 @@ public class Logs {
 
 	/**
 	 * System.err.println
-	 * @param msg
+	 * @param msg	输出内容
      */
 	public static void sysErr(String msg){
 		if (getLevel() >= LogType.ERROR && msg != null){
@@ -51,7 +50,7 @@ public class Logs {
 
 	/**
 	 * 日志等级
-	 * @return
+	 * @return		输出日志的等级
      */
 	public static int getLevel() {
 		return level;
@@ -59,7 +58,7 @@ public class Logs {
 
 	/**
 	 * 设置log等级
-	 * @param l
+	 * @param l		日志等级
      */
 	public static void setLevel(int l) {
 		if(l < LogType.NONE){
@@ -92,8 +91,22 @@ public class Logs {
 	public static boolean isConsoleLog(){
 		return consoleLog;
 	}
-
-	protected static String appName, appSign, appVersion, sysVersion, imei, deviceBrand, sysModel, sysSDK;
+	/**app包名*/
+	protected static String appName;
+	/**app签名*/
+	protected static String  appSign;
+	/**app包名*/
+	protected static String appVersion;
+	/**系统版本*/
+	protected static String sysVersion;
+	/**设备唯一串码*/
+	protected static String imei;
+	/**厂商*/
+	protected static String deviceBrand;
+	/**手机型号*/
+	protected static String sysModel;
+	/**系统sdk版本*/
+	protected static String sysSDK;
 	//sysModel手机型号，deviceBrand厂商，sysVersion系统版本，sdk版本
 	public static void setSysInfo(String appName, String appSign, String appVersion, String sysVersion,
 								  String imei, String deviceBrand, String sysModel, String sdk){

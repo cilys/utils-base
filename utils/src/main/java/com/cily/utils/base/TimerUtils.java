@@ -11,9 +11,8 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 /**
- * user:cily
- * time:2017/8/28
- * desc:计时器
+ * @author cily
+ * @version 1.0.0   2017-01-3  计时器
  */
 public class TimerUtils {
     private final static ScheduledExecutorService service = Executors.newSingleThreadScheduledExecutor();
