@@ -1,9 +1,8 @@
 package com.cily.utils.base;
 
 /**
- * user:cily
- * time:2017/8/28
- * desc:字符串处理工具
+ * @author cily
+ * @version 1.0.0   2017-01-3  字符串处理工具
  */
 public class StrUtils {
 

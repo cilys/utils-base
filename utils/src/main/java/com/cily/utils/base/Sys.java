@@ -1,12 +1,13 @@
 package com.cily.utils.base;
 
 /**
- * user:cily
- * time:2017/8/28
- * desc:部分系统方法
+ * @author cily
+ * @version 1.0.0   2017-01-3  部分系统方法
  */
-
 public class Sys {
+    /**
+     * 退出应用
+     */
     public final static void exit(){
         System.exit(0);
     }

@@ -5,9 +5,8 @@ import com.cily.utils.base.log.Logs;
 import java.util.Random;
 
 /**
- * user:cily
- * time:2017/8/28
- * desc:随机数生成工具类
+ * @author cily
+ * @version 1.0.0   2017-01-3  随机数生成工具类
  */
 public class RandomUtils {
 	private final static String TAG = "RandomUtils";
@@ -49,7 +48,7 @@ public class RandomUtils {
 	/**
 	 * 随机int型随机数
 	 * @param bound	范围
-	 * @return
+	 * @return		int类型随机数
      */
 	public final static int getRandomInt(int bound){
 		return getInt(getRandom(), bound);
@@ -57,7 +56,7 @@ public class RandomUtils {
 
 	/**
 	 * 生成Random对象
-	 * @return
+	 * @return		random对象
      */
 	public final static Random getRandom(){
 		return new Random();
