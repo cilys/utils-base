@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+    private int num = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn_id).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "点击测试jenkins", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "点击测试jenkins" + num++, Toast.LENGTH_SHORT).show();
             }
         });
     }
