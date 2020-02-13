@@ -1,4 +1,6 @@
 apply plugin: 'java'
+apply plugin: 'com.github.dcendents.android-maven'
+group = "com.github.cilys"
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -7,4 +9,4 @@ dependencies {
 sourceCompatibility = "1.7"
 targetCompatibility = "1.7"
 
-version = 'base-1.0.2'
+version = 'base-1.1.0'
